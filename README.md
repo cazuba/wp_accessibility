@@ -8,3 +8,4 @@
 - Clone the project `git clone https://github.com/cazuba/wp_accessibility {my_project_name}`
 - `cd {my_project_name}`
 - Run command `docker-compose up -d`
+- Visit [Localhost:8000](http://localhost:8000)
