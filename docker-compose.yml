@@ -4,7 +4,8 @@ services:
    db:
      image: mysql:5.7
      volumes:
-       - db_data:/var/lib/mysql
+       - ./db_data:/var/lib/mysql
+       - ./backup.sql:/docker-entrypoint-initdb.d/backup.sql
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
@@ -27,5 +28,3 @@ services:
        - ./config/php.conf.uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
        - ./wp-app:/var/www/html # Full wordpress project
        - ./app/:/var/www/html/wp-content # Theme development
-volumes:
-    db_data:
