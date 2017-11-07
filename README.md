@@ -9,3 +9,7 @@
 - `cd {my_project_name}`
 - Run command `docker-compose up -d`
 - Visit [Localhost:8000](http://localhost:8000)
+
+## Theme Base
+- [Wordpress Docker Image](https://hub.docker.com/_/wordpress/)
+- [sebastienb/Bootstrap-3-blank-wordpress-theme](https://github.com/sebastienb/Bootstrap-3-blank-wordpress-theme)
